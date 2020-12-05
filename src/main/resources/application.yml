@@ -1,0 +1,10 @@
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: audit30dev1
+    password: audit30dev1
+server:
+  port: 8090
