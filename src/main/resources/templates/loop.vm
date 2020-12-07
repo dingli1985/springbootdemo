@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smp>
+ #foreach ($woogie in $boogie)   
+     <rcd>
+	#foreach( $key in $woogie.keySet()) 
+		#if($key=="modes")
+    	<mode>$woogie.get($key)<mode>
+    	#elseif ($key=="nums")
+    	<num>$woogie.get($key)<num>
+		#else
+			<$key>$woogie.get($key)<$key>
+		#end
+	#end
+	</rcd>
+ #end 
+</smp>
